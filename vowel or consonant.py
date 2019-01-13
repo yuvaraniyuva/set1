@@ -1,11 +1,6 @@
 var=input()
-
 char=['a','e','i','o','u']
-
 if var in char:
-	
-     print("Vowel")
-
+    print("Vowel")
 else:
-	
-     print("Consonent")
+    print("Consonent")
