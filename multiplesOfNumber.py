@@ -1,4 +1,3 @@
-num=int(input())
-max=5
-a= range(num, (max*num)+1, num)
-print(*a)
+n=int(input())
+for i in range(1,6):
+	  print(i*n, end =" ")
