@@ -1,41 +1,34 @@
 #include <stdio.h>
-
-int main(void) {
-	int i,a[i],j,k,count=0;
-	scanf("%d",&i);
-	for(j=0;j<=i;j++)
-	{
-	scanf("%d",&a[j]);
-	}
-	for(j=0; j<=i; j++)
-   {
-    for(k=j+1;k<=i;k++)
-    {
-    if(a[j]==a[k])
-    {
-    printf("%d ",a[j]);
-    count=count+1;
-    }}}
-    ascending(a,count);
-    
-return 0;
-}void ascending(int a[], int count)
+int main(void)
 {
-   int temp, i, j, k;
-   for (j = 0; j < count; ++j)
-   {
-      for (k = j + 1; k < count; ++k)
-      {
-         if (a[j] > a[k])
-         {
-            temp = a[j];
-            a[j] = a[k];
-            a[k] = temp;
-         }
-      }
-   }
-
- printf("Numbers in ascending order:\n");
-   for (i = 0; i < count; ++i)
-      printf("%d\n", a[i]);
+     int i,j,k=0,a[10],b[10],num,count=0,t;
+     scanf("%d",&num);
+     for(i=0;i<num;i++)
+     scanf("%d",&a[i]);
+     for(i=0;i<num;i++)
+      for(j=i+1;j<num;j++)
+        if(a[i]==a[j])
+          {
+          	count++;
+          b[k]=a[i];
+          k++;
+          }
+          
+       if(count==0)
+       printf("unique");
+       else
+       {
+       	for(i=0;i<count;i++)
+       	   {
+       	   	for(j=i+1;j<count;j++) 
+       	if(b[i]>b[j])
+       	{
+       		t=b[i];
+       		b[i]=b[j];
+       		b[j]=t;
+       	}
+       	printf("%d\t",b[i]);
+       }
+       }
+     return 0;
 }
