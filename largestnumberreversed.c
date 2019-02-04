@@ -3,7 +3,7 @@
     {
 int number[30];
 int i, j, a, no;
-scanf("%d", &n);
+scanf("%d", &no);
 for (i = 0; i < no; ++i)
 scanf("%d", &number[i]);
  for (i = 0; i < no; ++i) 
@@ -18,7 +18,7 @@ scanf("%d", &number[i]);
                 }
             }
         }
- for (i = 0; i < n0; ++i) 
+ for (i = 0; i < no; ++i) 
         {
             printf("%d", number[i]);
         }
